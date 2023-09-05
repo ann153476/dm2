@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page title</title>
+    <link rel="stylesheet" href="./styles.css" />
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+
+    <script type="module" src="./map.js"></script>
+  </head>
+  <body>
+    <div id="map" class="map"></div>
+    <!-- 
+      The `defer` attribute causes the callback to execute after the full HTML
+      document has been parsed. For non-blocking uses, avoiding race conditions,
+      and consistent behavior across browsers, consider loading using Promises
+      with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+      -->
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfD-bhdR6yF_Gb4I8n3N1UiwM1HQFjKSE&callback=initMap&v=weekly"
+      defer
+    ></script>
+  </body>
+</html>
